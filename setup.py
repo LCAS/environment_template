@@ -15,14 +15,8 @@ setup(
         (f'share/{package_name}/config/topology', glob.glob('config/topology/*.*')),
         (f'share/{package_name}/config/world', glob.glob('config/world/*.*')),
     ],
-    install_requires=[''],
     zip_safe=True,
     maintainer='james',
     maintainer_email='primordia@live.com',
     description='instance of basic template for standardised map referencing across digital twins',
-    license='TODO: License declaration',
-    tests_require=['pytest'],
-    entry_points={
-        'console_scripts': [],
-    },
 )
