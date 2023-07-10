@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<GroundOverlay>
+	<name>Metric Map</name>
+	<description><![CDATA[<img style="max-width:500px;" src="map.png">]]></description>
+	<color>b5ffffff</color>
+	<Icon>
+		<href>map.png</href>
+		<viewBoundScale>0.75</viewBoundScale>
+	</Icon>
+	<LatLonBox>
+		<north>53.26949367632103</north>
+		<south>53.26779823954967</south>
+		<east>-0.5229849207950459</east>
+		<west>-0.5260277251232575</west>
+		<rotation>-0.03721819818019867</rotation>
+	</LatLonBox>
+</GroundOverlay>
+</kml>
