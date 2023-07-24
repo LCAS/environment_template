@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+    <name>riseholme_polytunnel_auto_metric</name>
+    <GroundOverlay id="0">
+        <name>riseholme_polytunnel</name>
+        <color>64ffffff</color>
+        <Icon>
+            <href>https://raw.githubusercontent.com/LCAS/environment_template/riseholme_general_east_pathway/config/metric/map/map-tp.png</href>
+        </Icon>
+        <LatLonBox>
+          <north>53.26959422878407</north>
+          <south>53.26779558557223</south>
+          <west>-0.5267291206059773</west>
+          <east>-0.5237216735269092</east>
+          <rotation>0.0</rotation>
+        </LatLonBox>
+    </GroundOverlay>
+</Document>
+</kml>
