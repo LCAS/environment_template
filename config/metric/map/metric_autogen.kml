@@ -1,34 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document>
-    <name>riseholme_bulluck_close_auto_metric</name>
+    <name>riseholme_general_east_pathway_auto_metric</name>	<Placemark id="A">
+		<name>NE</name>
+		<Point>
+			<coordinates>-0.527792118605044,53.271987061034636,0</coordinates>
+		</Point>
+	</Placemark>	<Placemark id="B">
+		<name>SW</name>
+		<Point>
+			<coordinates>-0.5323517632594537,53.264972352508465,0</coordinates>
+		</Point>
+	</Placemark>	<Placemark id="C">
+		<name>Datum</name>
+		<Point>
+			<coordinates>-0.5310367450107956,53.26488735245891,0</coordinates>
+		</Point>
+	</Placemark>	<Placemark id="Aa">
+		<name>SW_ori</name>
+		<Point>
+			<coordinates>-0.5318159296480074,53.26480228820538,0</coordinates>
+		</Point>
+	</Placemark>	<Placemark id="Aaa">
+		<name>SW_2</name>
+		<Point>
+			<coordinates>-0.5297217107438519,53.26480235240937,0</coordinates>
+		</Point>
+	</Placemark>	<Placemark id="Bb">
+		<name>NE_ori</name>
+		<Point>
+			<coordinates>-0.5248664430937977,53.26753171791476,0</coordinates>
+		</Point>
+	</Placemark>
     <GroundOverlay id="0">
         <name>auto_raw</name>
-		<visibility>0</visibility>
-        <color>bbffffff</color>
-        <Icon>
-            <href>https://raw.githubusercontent.com/LCAS/environment_template/riseholme_bulluck_close/config/metric/map/map_autogen.png</href>
-        </Icon>
-        <LatLonBox>
-          <north>53.267529545179315</north>
-          <south>53.26480235240937</south>
-          <west>-0.5297217107438519</west>
-          <east>-0.5179937348447611</east>
-          <rotation>0.0</rotation>
-        </LatLonBox>
-    </GroundOverlay>
-    <GroundOverlay id="1">
-        <name>auto_tp</name>
 		<visibility>1</visibility>
         <color>bbffffff</color>
         <Icon>
-            <href>https://raw.githubusercontent.com/LCAS/environment_template/riseholme_bulluck_close/config/metric/map/map_autogen-tp.png</href>
+            <href>https://raw.githubusercontent.com/LCAS/environment_template/riseholme_general_east_pathway/config/metric/map/map_autogen.png</href>
         </Icon>
         <LatLonBox>
-          <north>53.267529545179315</north>
-          <south>53.26480235240937</south>
-          <west>-0.5297217107438519</west>
-          <east>-0.5179937348447611</east>
+          <north>53.271987061034636</north>
+          <south>53.264972352508465</south>
+          <west>-0.5323517632594537</west>
+          <east>-0.527792118605044</east>
           <rotation>0.0</rotation>
         </LatLonBox>
     </GroundOverlay>
