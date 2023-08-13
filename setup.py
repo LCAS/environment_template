@@ -13,7 +13,7 @@ setup(
         (f'share/{package_name}/config/location', glob.glob('config/location/*.*')),
         (f'share/{package_name}/config/metric/map', glob.glob('config/metric/map/*.*')),
         (f'share/{package_name}/config/metric/nogo', glob.glob('config/metric/nogo/*.*')),
-        (f'share/{package_name}/config/topology', glob.glob('config/topology/*.*')),
+        (f'share/{package_name}/config/topological', glob.glob('config/topological/*.*')),
         (f'share/{package_name}/config/world', glob.glob('config/world/*.*')),
     ],
     zip_safe=True,
