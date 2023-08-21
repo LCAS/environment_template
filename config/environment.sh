@@ -1,7 +1,7 @@
 # Field Details
-export FIELD_NAME='main'
-export FIELD_ID='0'
-export FIELD_TYPE='base'
+export FIELD_NAME='riseholme_general_east_pathway'
+export FIELD_ID='5'
+export FIELD_TYPE='private_pathway'
 
 # Connection details
 export MQTT_IP='0.0.0.0'
