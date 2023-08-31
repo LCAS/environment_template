@@ -7,7 +7,7 @@
 		<visibility>1</visibility>
         <color>bbffffff</color>
         <Icon>
-            <href>https://raw.githubusercontent.com/LCAS/environment_template/riseholme_bulluck_close/config/location/village2.png</href>
+            <href>https://raw.githubusercontent.com/LCAS/environment_template/riseholme_bulluck_close/config/metric/map/map.png</href>
         </Icon>
         <LatLonBox>
           <north>53.267533903895945</north>
