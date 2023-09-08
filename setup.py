@@ -10,6 +10,7 @@ setup(
     data_files=[
         ('share/ament_index/resource_index/packages', [f'resource/{package_name}']),
         (f'share/{package_name}', ['package.xml']),
+        (f'share/{package_name}/config', ['config/environment.sh']),
         (f'share/{package_name}/config/location', glob.glob('config/location/*.*')),
         (f'share/{package_name}/config/metric', glob.glob('config/metric/*.*')),
         (f'share/{package_name}/config/topological', glob.glob('config/topological/*.*')),
