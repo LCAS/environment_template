@@ -1,6 +1,6 @@
-export FIELD_NAME='riseholme_fruit_field_7'
-export FIELD_ID='4211'
-export FIELD_TYPE='pasture'
+export FIELD_NAME='riseholme_general_east_pathway'
+export FIELD_ID='p1'
+export FIELD_TYPE='pathways'
 
 export MQTT_IP='0.0.0.0'
 export MQTT_PORT='8883'
