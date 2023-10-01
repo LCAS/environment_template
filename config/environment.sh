@@ -1,12 +1,10 @@
+#Farm Details
+export FARM_NAME='riseholme_park'
+
 # Field Details
-export FIELD_NAME='riseholme_general_east_pathway'
+export FIELD_NAME='general_east_pathway'
 export FIELD_ID='p1'
 export FIELD_TYPE='pathway'
-
-# Connection details
-export MQTT_IP='0.0.0.0'
-export MQTT_PORT='8883'
-export MQTT_NS=''
 
 # Config Quick-References
 CONF=$(ros2 pkg prefix environment_template)/share/environment_template/config/
