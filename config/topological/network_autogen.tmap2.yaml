@@ -37,9 +37,9 @@ verts:
       y: -0.241
 meta:
   last_updated: 0
-metric_map: riseholme_polytunnel
-name: riseholme_polytunnel_restrict
-pointset: riseholme_polytunnel_restrict
+metric_map: general_east_pathway
+name: general_east_pathway
+pointset: general_east_pathway
 transformation:
   child: topo_map
   parent: map
