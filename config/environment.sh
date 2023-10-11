@@ -2,7 +2,7 @@
 export FARM_NAME='riseholme_park'
 
 # Field Details
-export FIELD_NAME='strawberry_polytunnel'
+export FIELD_NAME='strawberry_polytunnels'
 export FIELD_ID='poly1'
 export FIELD_TYPE='polytunnel'
 
