@@ -37,9 +37,9 @@ verts:
       y: -0.241
 meta:
   last_updated: 0
-metric_map: general_central_pathway
-name: general_central_pathway
-pointset: general_central_pathway
+metric_map: 40_acre
+name: 40_acre
+pointset: 40_acre
 transformation:
   child: topo_map
   parent: map
@@ -54,9 +54,9 @@ transformation:
     z: 0.0
 nodes:
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint1
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -68,8 +68,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -102.08
-        y: -41.56
+        x: 309.19
+        y: 57.83
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -77,11 +77,56 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint1_WayPoint2
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint2
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint1_WayPoint41
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint41
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint1_WayPoint1
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint1
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint2
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -93,8 +138,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -95.3
-        y: -35.01
+        x: 102.9
+        y: 6.27
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -102,11 +147,56 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint2_WayPoint3
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint3
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint2_WayPoint44
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint44
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint2_WayPoint1
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint1
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint3
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -118,8 +208,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -91.98
-        y: -42.9
+        x: 17.57
+        y: -11.95
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -127,11 +217,41 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint3_WayPoint4
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint4
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint3_WayPoint2
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint2
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint4
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -143,8 +263,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -103.67
-        y: -26.9
+        x: 17.31
+        y: -34.95
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -152,11 +272,56 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint4_WayPoint3
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint3
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint4_WayPoint42
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint42
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint4_WayPoint5
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint5
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint5
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -168,8 +333,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -120.29
-        y: -19.23
+        x: 17.37
+        y: -44.06
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -177,11 +342,56 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint5_WayPoint4
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint4
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint5_WayPoint6
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint6
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint5_WayPoint45
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint45
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint6
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -193,8 +403,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -131.12
-        y: -15.23
+        x: 18.5
+        y: -79.72
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -202,11 +412,56 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint6_WayPoint48
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint48
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint6_WayPoint7
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint7
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint6_WayPoint5
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint5
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint7
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -218,8 +473,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -137.83
-        y: -8.01
+        x: 18.83
+        y: -97.17
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -227,11 +482,56 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint7_WayPoint8
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint8
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint7_WayPoint49
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint49
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint7_WayPoint6
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint6
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint8
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -243,8 +543,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -139.76
-        y: -4.68
+        x: 19.83
+        y: -129.28
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -252,11 +552,56 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint8_WayPoint7
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint7
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint8_WayPoint9
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint9
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint8_WayPoint52
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint52
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint9
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -268,8 +613,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -147.13
-        y: -6.34
+        x: 20.69
+        y: -145.28
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -277,11 +622,56 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint9_WayPoint8
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint8
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint9_WayPoint53
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint53
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint9_WayPoint10
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint10
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint10
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -293,8 +683,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -152.78
-        y: 8.99
+        x: 22.02
+        y: -177.61
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -302,11 +692,56 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint10_WayPoint11
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint11
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint10_WayPoint56
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint56
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint10_WayPoint9
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint9
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint11
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -318,8 +753,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -171.26
-        y: 4.77
+        x: 22.42
+        y: -193.06
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -327,11 +762,56 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint11_WayPoint57
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint57
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint11_WayPoint12
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint12
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint11_WayPoint10
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint10
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint12
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -343,8 +823,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -178.83
-        y: 7.55
+        x: 23.69
+        y: -226.84
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -352,11 +832,56 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint12_WayPoint11
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint11
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint12_WayPoint13
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint13
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint12_WayPoint60
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint60
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint13
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -368,8 +893,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -199.17
-        y: 2.44
+        x: 24.28
+        y: -239.84
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -377,11 +902,56 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint13_WayPoint61
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint61
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint13_WayPoint14
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint14
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint13_WayPoint12
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint12
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint14
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -393,8 +963,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -204.88
-        y: 1.1
+        x: 25.35
+        y: -274.28
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -402,11 +972,56 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint14_WayPoint64
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint64
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint14_WayPoint15
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint15
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint14_WayPoint13
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint13
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint15
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -418,8 +1033,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -206.48
-        y: 6.32
+        x: 26.08
+        y: -289.06
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -427,11 +1042,56 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint15_WayPoint14
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint14
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint15_WayPoint65
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint65
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint15_WayPoint16
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint16
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint16
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -443,8 +1103,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -209.47
-        y: -0.23
+        x: 26.94
+        y: -309.72
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -452,11 +1112,56 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint16_WayPoint17
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint17
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint16_WayPoint15
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint15
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint16_WayPoint18
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint18
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint17
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -468,8 +1173,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -177.04
-        y: 2.1
+        x: 32.59
+        y: -313.72
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -477,11 +1182,56 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint17_WayPoint18
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint18
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint17_WayPoint20
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint20
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint17_WayPoint16
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint16
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint18
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -493,8 +1243,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -168.07
-        y: -7.45
+        x: 27.07
+        y: -313.95
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -502,11 +1252,56 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint18_WayPoint17
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint17
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint18_WayPoint19
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint19
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint18_WayPoint16
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint16
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint19
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -518,8 +1313,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -166.21
-        y: -16.34
+        x: 17.84
+        y: -314.95
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -527,11 +1322,26 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint19_WayPoint18
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint18
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint20
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -543,8 +1353,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -171.85
-        y: -8.79
+        x: 126.83
+        y: -303.72
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -552,11 +1362,41 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint20_WayPoint17
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint17
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint20_WayPoint21
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint21
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint21
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -568,8 +1408,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -179.1
-        y: -14.01
+        x: 226.45
+        y: -291.28
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -577,11 +1417,41 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint21_WayPoint22
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint22
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint21_WayPoint20
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint20
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint22
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -593,8 +1463,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -184.94
-        y: -20.34
+        x: 424.7
+        y: -265.06
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -602,11 +1472,41 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint22_WayPoint21
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint21
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint22_WayPoint23
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint23
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint23
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -618,8 +1518,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -237.24
-        y: -33.9
+        x: 444.37
+        y: -256.06
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -627,11 +1527,41 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint23_WayPoint22
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint22
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint23_WayPoint24
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint24
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint24
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -643,8 +1573,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -246.55
-        y: -7.23
+        x: 461.51
+        y: -253.06
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -652,11 +1582,56 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint24_WayPoint67
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint67
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint24_WayPoint25
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint25
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint24_WayPoint23
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint23
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint25
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -668,8 +1643,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -174.38
-        y: -18.45
+        x: 461.45
+        y: -237.06
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -677,11 +1652,56 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint25_WayPoint66
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint66
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint25_WayPoint26
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint26
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint25_WayPoint24
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint24
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint26
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -693,8 +1713,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -177.17
-        y: -21.45
+        x: 461.51
+        y: -235.17
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -702,11 +1722,41 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint26_WayPoint27
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint27
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint26_WayPoint25
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint25
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint27
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -718,8 +1768,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -144.94
-        y: -8.56
+        x: 461.71
+        y: -213.61
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -727,11 +1777,41 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint27_WayPoint26
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint26
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint27_WayPoint28
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint28
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint28
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -743,8 +1823,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -138.76
-        y: -27.45
+        x: 461.32
+        y: -208.95
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -752,11 +1832,56 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint28_WayPoint63
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint63
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint28_WayPoint27
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint27
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint28_WayPoint29
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint29
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint29
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -768,8 +1893,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -132.65
-        y: -27.01
+        x: 461.12
+        y: -191.84
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -777,11 +1902,56 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint29_WayPoint62
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint62
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint29_WayPoint30
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint30
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint29_WayPoint28
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint28
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint30
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -793,8 +1963,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -126.47
-        y: -23.56
+        x: 460.98
+        y: -185.95
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -802,11 +1972,41 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint30_WayPoint29
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint29
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint30_WayPoint31
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint31
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint31
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -818,8 +2018,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -101.68
-        y: -20.01
+        x: 456.6
+        y: -171.84
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -827,11 +2027,41 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint31_WayPoint30
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint30
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint31_WayPoint32
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint32
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint32
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -843,8 +2073,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -98.82
-        y: -15.34
+        x: 449.42
+        y: -159.61
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -852,11 +2082,56 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint32_WayPoint33
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint33
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint32_WayPoint59
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint59
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint32_WayPoint31
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint31
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint33
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -868,8 +2143,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -93.11
-        y: -11.68
+        x: 438.92
+        y: -143.28
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -877,11 +2152,56 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint33_WayPoint58
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint58
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint33_WayPoint34
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint34
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint33_WayPoint32
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint32
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint34
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -893,8 +2213,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -86.66
-        y: -10.9
+        x: 419.51
+        y: -112.39
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -902,11 +2222,56 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint34_WayPoint55
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint55
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint34_WayPoint33
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint33
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint34_WayPoint35
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint35
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint35
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -918,8 +2283,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -81.28
-        y: -11.45
+        x: 410.67
+        y: -98.95
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -927,11 +2292,56 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint35_WayPoint54
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint54
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint35_WayPoint34
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint34
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint35_WayPoint36
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint36
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint36
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -943,8 +2353,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -77.76
-        y: -13.68
+        x: 393.0
+        y: -73.17
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -952,11 +2362,56 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint36_WayPoint51
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint51
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint36_WayPoint37
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint37
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint36_WayPoint35
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint35
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint37
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -968,8 +2423,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -72.11
-        y: -18.34
+        x: 380.7
+        y: -55.17
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -977,11 +2432,56 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint37_WayPoint36
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint36
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint37_WayPoint50
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint50
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint37_WayPoint38
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint38
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint38
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -993,8 +2493,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -55.9
-        y: -30.23
+        x: 362.89
+        y: -25.17
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1002,11 +2502,56 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint38_WayPoint47
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint47
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint38_WayPoint39
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint39
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint38_WayPoint37
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint37
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint39
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -1018,8 +2563,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -52.44
-        y: -31.9
+        x: 351.92
+        y: -9.61
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1027,11 +2572,56 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint39_WayPoint40
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint40
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint39_WayPoint46
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint46
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint39_WayPoint38
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint38
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint40
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -1043,8 +2633,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -51.91
-        y: -36.23
+        x: 335.71
+        y: 18.72
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1052,11 +2642,56 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint40_WayPoint39
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint39
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint40_WayPoint43
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint43
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint40_WayPoint41
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint41
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint41
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -1068,8 +2703,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -50.51
-        y: -45.12
+        x: 325.21
+        y: 34.83
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1077,11 +2712,56 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint41_WayPoint40
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint40
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint41_WayPoint44
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint44
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint41_WayPoint1
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint1
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint42
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -1093,8 +2773,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -23.4
-        y: -41.34
+        x: 23.09
+        y: -28.61
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1102,11 +2782,41 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint42_WayPoint4
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint4
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint42_WayPoint43
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint43
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint43
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -1118,8 +2828,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -24.6
-        y: -33.45
+        x: 331.72
+        y: 12.5
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1127,11 +2837,41 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint43_WayPoint40
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint40
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint43_WayPoint42
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint42
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint44
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -1143,8 +2883,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -15.56
-        y: -32.23
+        x: 317.76
+        y: 36.16
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1152,11 +2892,41 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint44_WayPoint2
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint2
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint44_WayPoint41
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint41
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint45
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -1168,8 +2938,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -13.9
-        y: -40.45
+        x: 26.88
+        y: -52.28
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1177,11 +2947,41 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint45_WayPoint46
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint46
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint45_WayPoint5
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint5
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint46
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -1193,8 +2993,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -12.24
-        y: -48.12
+        x: 343.22
+        y: -9.95
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1202,11 +3002,41 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint46_WayPoint39
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint39
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint46_WayPoint45
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint45
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint47
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -1218,8 +3048,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -51.98
-        y: -48.01
+        x: 358.9
+        y: -31.84
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1227,11 +3057,41 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint47_WayPoint48
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint48
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint47_WayPoint38
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint38
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint48
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -1243,8 +3103,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -49.52
-        y: -69.45
+        x: 27.21
+        y: -76.39
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1252,11 +3112,41 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint48_WayPoint47
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint47
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint48_WayPoint6
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint6
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint49
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -1268,8 +3158,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -50.71
-        y: -69.9
+        x: 30.33
+        y: -100.61
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1277,11 +3167,41 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint49_WayPoint7
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint7
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint49_WayPoint50
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint50
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint50
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -1293,8 +3213,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -44.8
-        y: -69.23
+        x: 374.19
+        y: -54.06
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1302,11 +3222,41 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint50_WayPoint49
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint49
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint50_WayPoint37
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint37
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint51
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -1318,8 +3268,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -43.34
-        y: -69.79
+        x: 388.28
+        y: -76.61
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1327,11 +3277,41 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint51_WayPoint36
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint36
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint51_WayPoint52
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint52
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint52
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -1343,8 +3323,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -46.73
-        y: -59.01
+        x: 26.68
+        y: -124.95
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1352,11 +3332,41 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint52_WayPoint8
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint8
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint52_WayPoint51
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint51
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint53
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -1368,8 +3378,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -44.67
-        y: -58.79
+        x: 30.0
+        y: -149.17
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1377,11 +3387,41 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint53_WayPoint9
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint9
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint53_WayPoint54
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint54
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint54
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -1393,8 +3433,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -51.31
-        y: -27.34
+        x: 403.83
+        y: -97.84
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1402,11 +3442,41 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint54_WayPoint53
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint53
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint54_WayPoint35
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint35
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint55
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -1418,8 +3488,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -45.2
-        y: -24.68
+        x: 415.39
+        y: -120.84
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1427,11 +3497,41 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint55_WayPoint56
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint56
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint55_WayPoint34
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint34
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint56
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -1443,8 +3543,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -32.84
-        y: -22.01
+        x: 27.41
+        y: -173.17
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1452,11 +3552,41 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint56_WayPoint55
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint55
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint56_WayPoint10
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint10
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint57
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -1468,8 +3598,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -29.38
-        y: -21.34
+        x: 32.46
+        y: -196.72
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1477,11 +3607,41 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint57_WayPoint11
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint11
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint57_WayPoint58
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint58
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint58
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -1493,8 +3653,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -33.44
-        y: -13.79
+        x: 432.74
+        y: -142.61
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1502,11 +3662,41 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint58_WayPoint57
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint57
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint58_WayPoint33
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint33
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint59
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -1518,8 +3708,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -37.49
-        y: -7.56
+        x: 445.63
+        y: -165.5
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1527,11 +3717,41 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint59_WayPoint60
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint60
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint59_WayPoint32
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint32
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint60
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -1543,8 +3763,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -39.02
-        y: -23.01
+        x: 30.53
+        y: -221.06
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1552,11 +3772,41 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint60_WayPoint12
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint12
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint60_WayPoint59
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint59
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint61
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -1568,8 +3818,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -73.84
-        y: -12.68
+        x: 32.06
+        y: -244.72
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1577,11 +3827,41 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint61_WayPoint62
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint62
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint61_WayPoint13
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint13
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint62
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -1593,8 +3873,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -1.27
-        y: -17.34
+        x: 454.87
+        y: -188.5
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1602,11 +3882,41 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint62_WayPoint61
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint61
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint62_WayPoint29
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint29
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint63
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -1618,8 +3928,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -2.0
-        y: -12.23
+        x: 455.07
+        y: -212.28
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1627,11 +3937,41 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint63_WayPoint64
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint64
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint63_WayPoint28
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint28
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint64
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -1643,8 +3983,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: 22.25
-        y: -8.9
+        x: 32.13
+        y: -269.06
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1652,11 +3992,41 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint64_WayPoint14
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint14
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint64_WayPoint63
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint63
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint65
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -1668,8 +4038,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: 23.12
-        y: -13.68
+        x: 34.78
+        y: -293.17
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1677,11 +4047,41 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint65_WayPoint66
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint66
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint65_WayPoint15
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint15
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
-    map: riseholme_polytunnel
+    map: 40_acre
     node: WayPoint66
-    pointset: riseholme_polytunnel_restrict
+    pointset: 40_acre
   node:
     localise_by_topic: ''
     parent_frame: map
@@ -1693,8 +4093,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: 26.3
-        y: -1.34
+        x: 455.73
+        y: -236.17
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1702,4 +4102,184 @@ nodes:
     restrictions_planning: robot
     restrictions_runtime: obstacleFree_1
     verts: *vert1
-    edges: []
+    edges:
+    - edge_id: WayPoint66_WayPoint25
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint25
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint66_WayPoint65
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint65
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+- meta:
+    map: 40_acre
+    node: WayPoint67
+    pointset: 40_acre
+  node:
+    localise_by_topic: ''
+    parent_frame: map
+    name: WayPoint67
+    pose:
+      orientation:
+        w: 0.7897749049165983
+        x: 0.0
+        y: 0.0
+        z: -0.6133967717260812
+      position:
+        x: 464.17
+        y: -262.5
+        z: 0.0
+    properties:
+      xy_goal_tolerance: 0.3
+      yaw_goal_tolerance: 0.1
+    restrictions_planning: robot
+    restrictions_runtime: obstacleFree_1
+    verts: *vert1
+    edges:
+    - edge_id: WayPoint67_WayPoint68
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint68
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint67_WayPoint24
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint24
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+- meta:
+    map: 40_acre
+    node: WayPoint68
+    pointset: 40_acre
+  node:
+    localise_by_topic: ''
+    parent_frame: map
+    name: WayPoint68
+    pose:
+      orientation:
+        w: 0.7897749049165983
+        x: 0.0
+        y: 0.0
+        z: -0.6133967717260812
+      position:
+        x: 469.76
+        y: -266.28
+        z: 0.0
+    properties:
+      xy_goal_tolerance: 0.3
+      yaw_goal_tolerance: 0.1
+    restrictions_planning: robot
+    restrictions_runtime: obstacleFree_1
+    verts: *vert1
+    edges:
+    - edge_id: WayPoint68_WayPoint69
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint69
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint68_WayPoint67
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint67
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+- meta:
+    map: 40_acre
+    node: WayPoint69
+    pointset: 40_acre
+  node:
+    localise_by_topic: ''
+    parent_frame: map
+    name: WayPoint69
+    pose:
+      orientation:
+        w: 0.7897749049165983
+        x: 0.0
+        y: 0.0
+        z: -0.6133967717260812
+      position:
+        x: 474.34
+        y: -269.5
+        z: 0.0
+    properties:
+      xy_goal_tolerance: 0.3
+      yaw_goal_tolerance: 0.1
+    restrictions_planning: robot
+    restrictions_runtime: obstacleFree_1
+    verts: *vert1
+    edges:
+    - edge_id: WayPoint69_WayPoint68
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint68
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
