@@ -9,5 +9,8 @@ export FIELD_TYPE='building'
 # Config Quick-References
 CONF=$(ros2 pkg prefix environment_template)/share/environment_template/config/
 
+export MAP_FILE="$CONF/metric/map/map.yaml"
+if [ ! -f "$MAP_FILE" ]; then export MAP_FILE="$CONF/metric/map_autogen/map.yaml" ; fi
+
 export TMAP_FILE="$CONF/topological/network.tmap2.yaml"
-if [ ! -f "$FILE" ]; then export TMAP_FILE="$CONF/topological/network_autogen.tmap2.yaml" ; fi
+if [ ! -f "$TMAP_FILE" ]; then export TMAP_FILE="$CONF/topological/network_autogen.tmap2.yaml" ; fi
