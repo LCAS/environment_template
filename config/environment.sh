@@ -1,10 +1,10 @@
 # Farm Details
-export FARM_NAME='uol'
+export FARM_NAME='riseholme_park_fields'
 
 # Field Details
-export FIELD_NAME='main'
+export FIELD_NAME='field_7'
 export FIELD_ID='uuid'
-export FIELD_TYPE='empty'
+export FIELD_TYPE='pasture'
 
 # Config Quick-References
 #CONF=$(ros2 pkg prefix environment_template)/share/environment_template/config/
