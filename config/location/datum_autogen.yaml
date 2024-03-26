@@ -1,0 +1,37 @@
+# Define site datum - best to be in the center of the field of interest
+datum_latitude: &datum_latitude 52.4931000
+datum_longitude: &datum_longitude 13.3245000
+
+
+# Define GNSS Fence coordinates [lat, lon]
+gnss_fence:
+  gnss_fence_coords: [[52.5048000, 13.3471000], [52.5048000, 13.3245000], [52.4931000, 13.3245000], [52.4931000, 13.3471000]]
+
+# Define map size (x east, y north) in meters from the datum
+gmapping:
+  xmin: -767.40391206763
+  xmax: 767.40391206763
+  ymin: -650.9693565685898
+  ymax: 650.9693565685898
+
+mapviz_initialize_origin:
+  local_xy_origins:
+    - {
+    name: dont_change_this,
+    latitude: *datum_latitude,
+    longitude: *datum_longitude,
+    altitude: 100.0,
+    heading: 0.0
+    }
+
+navsat_transform_node:
+  magnetic_declination_radians: 0.0
+  yaw_offset: 0.0
+  zero_altitude: true
+  broadcast_utm_transform: false
+  broadcast_utm_transform_as_parent_frame: false
+  publish_filtered_gps: true
+  use_odometry_yaw: false
+  wait_for_datum: true
+  datum: [ *datum_latitude, *datum_longitude, 0.0]
+
