@@ -61,7 +61,7 @@ echo "Environment: $CONFIG_DIR"
 #%
 #================================================================
 export PROPERTIES_FILE="$CONFIG_DIR/properties.sh"
-if [ ! -f "$PROPERTIES_FILE" ]; then source $PROPERTIES_FILE ; fi
+if [ -f "$PROPERTIES_FILE" ]; then source $PROPERTIES_FILE ; fi
 
 
 
