@@ -74,9 +74,9 @@ if [ -f "$PROPERTIES_FILE" ]; then source $PROPERTIES_FILE ; fi
 #%    autogen version does not exist.
 #%
 #================================================================
-export DATUM_FILE="$CONFIG_DIR/location/datum.yaml"
-if [ ! -f "$DATUM_FILE" ]; then export DATUM_FILE="$CONFIG_DIR/location/datum_autogen.yaml" ; fi
-if [ ! -f "$DATUM_FILE" ]; then export DATUM_FILE="" ; fi
+#export DATUM_FILE="$CONFIG_DIR/location/datum.yaml"
+#if [ ! -f "$DATUM_FILE" ]; then export DATUM_FILE="$CONFIG_DIR/location/datum_autogen.yaml" ; fi
+#if [ ! -f "$DATUM_FILE" ]; then export DATUM_FILE="" ; fi
 
 
 
