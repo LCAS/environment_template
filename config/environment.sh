@@ -27,7 +27,7 @@
 #%    in which this environment was tested and configured.
 #%
 #================================================================
-export ENVIRONMENT_COMMON_LATEST_RELEASE='v1.0.0'
+export ENVIRONMENT_COMMON_LATEST_RELEASE='v1.0.1'
 
 
 
@@ -107,6 +107,23 @@ if [ ! -f "$TMAP_FILE" ]; then export TMAP_FILE="" ; fi
 export GAZEBO_WORLD_FILE="$CONFIG_DIR/world/gazebo.world.xml"
 if [ ! -f "$GAZEBO_WORLD_FILE" ]; then export GAZEBO_WORLD_FILE="$CONFIG_DIR/world/gazebo_autogen.world.xml" ; fi
 if [ ! -f "$GAZEBO_WORLD_FILE" ]; then export GAZEBO_WORLD_FILE="" ; fi
+
+
+
+#================================================================
+# Custom models for use with Gazebo World file
+#================================================================
+#% DESCRIPTION
+#%    This is used to add any custom models included within
+#%    the environment, to the gazebo reference library. This
+#%    is completed only on the condition wherein there is
+#%    more than just the .placeholder file present in the
+#%    directory.
+#%
+#================================================================
+export GAZEBO_CUSTOM_MODELS="$CONFIG_DIR/world/custom_models/"
+non_hidden_file_count=$(ls -l "$GAZEBO_CUSTOM_MODELS" | grep -v "^\." | wc -l)
+if [ "$non_hidden_file_count" -gt 1 ]; then export GAZEBO_MODEL_PATH="$GAZEBO_MODEL_PATH:$GAZEBO_CUSTOM_MODELS" ; fi
 
 
 
