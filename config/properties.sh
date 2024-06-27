@@ -18,12 +18,21 @@
 
 
 #================================================================
+# Origin Details
+#================================================================
+#% DESCRIPTION
+#%    Section to define the origin of the maps if one exists
+#================================================================
+export ENVIRONMENT_ORIGINS=''
+
+
+#================================================================
 # Farm Details
 #================================================================
 #% DESCRIPTION
 #%    Used to identify the associated farm.
 #================================================================
-export FARM_NAME='uol'
+export FARM_NAME=''
 
 
 
@@ -33,6 +42,6 @@ export FARM_NAME='uol'
 #% DESCRIPTION
 #%    Used to identify the associated field.
 #================================================================
-export FIELD_NAME='main'
-export FIELD_ID='uuid'
-export FIELD_TYPE='empty'
+export FIELD_NAME=''
+export FIELD_ID=''
+export FIELD_TYPE=''
