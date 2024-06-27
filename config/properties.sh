@@ -23,7 +23,7 @@
 #% DESCRIPTION
 #%    Section to define the origin of the maps if one exists
 #================================================================
-export ENVIRONMENT_ORIGINS='https://github.com/LCAS/CMP9767_LIMO'
+export ENVIRONMENT_ORIGINS='https://github.com/LCAS/CMP9767_LIMO, https://github.com/westonrobot/limo_ros2_docker, https://github.com/agilexrobotics/limo_ros2'
 
 
 #================================================================
