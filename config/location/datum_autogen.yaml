@@ -1,6 +1,6 @@
 # Define site datum - best to be in the center of the field of interest
-datum_latitude: &datum_latitude 53.26826931067671
-datum_longitude: &datum_longitude -0.5245565004292441
+datum_latitude: &datum_latitude 53.26810154766708
+datum_longitude: &datum_longitude -0.5244265174282918
 
 # Define GNSS Fence coordinates [lat, lon]
 gnss_fence:

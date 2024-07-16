@@ -68,8 +68,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: 8.36
-        y: 11.79
+        x: 8.27
+        y: 12.38
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -123,8 +123,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: 11.69
-        y: -10.77
+        x: 11.6
+        y: -10.17
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -133,21 +133,6 @@ nodes:
     restrictions_runtime: obstacleFree_1
     verts: *vert1
     edges:
-    - edge_id: WayPoint2_WayPoint22
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint22
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
     - edge_id: WayPoint2_WayPoint4
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
@@ -160,6 +145,21 @@ nodes:
             frame_id: $node.parent_frame
           pose: $node.pose
       node: WayPoint4
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint2_WayPoint22
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint22
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
@@ -178,8 +178,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: 5.9
-        y: 11.45
+        x: 5.82
+        y: 12.05
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -188,21 +188,6 @@ nodes:
     restrictions_runtime: obstacleFree_1
     verts: *vert1
     edges:
-    - edge_id: WayPoint3_WayPoint1
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint1
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
     - edge_id: WayPoint3_WayPoint23
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
@@ -215,6 +200,21 @@ nodes:
             frame_id: $node.parent_frame
           pose: $node.pose
       node: WayPoint23
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint3_WayPoint1
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint1
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
@@ -248,8 +248,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: 9.16
-        y: -11.1
+        x: 9.07
+        y: -10.51
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -258,21 +258,6 @@ nodes:
     restrictions_runtime: obstacleFree_1
     verts: *vert1
     edges:
-    - edge_id: WayPoint4_WayPoint6
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint6
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
     - edge_id: WayPoint4_WayPoint26
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
@@ -285,6 +270,21 @@ nodes:
             frame_id: $node.parent_frame
           pose: $node.pose
       node: WayPoint26
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint4_WayPoint6
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint6
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
@@ -318,8 +318,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: 3.38
-        y: 11.12
+        x: 3.29
+        y: 11.72
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -388,8 +388,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: 6.7
-        y: -11.44
+        x: 6.61
+        y: -10.84
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -398,21 +398,6 @@ nodes:
     restrictions_runtime: obstacleFree_1
     verts: *vert1
     edges:
-    - edge_id: WayPoint6_WayPoint8
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint8
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
     - edge_id: WayPoint6_WayPoint4
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
@@ -425,6 +410,21 @@ nodes:
             frame_id: $node.parent_frame
           pose: $node.pose
       node: WayPoint4
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint6_WayPoint8
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint8
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
@@ -458,8 +458,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: 0.92
-        y: 10.68
+        x: 0.83
+        y: 11.27
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -468,21 +468,6 @@ nodes:
     restrictions_runtime: obstacleFree_1
     verts: *vert1
     edges:
-    - edge_id: WayPoint7_WayPoint5
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint5
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
     - edge_id: WayPoint7_WayPoint9
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
@@ -495,6 +480,21 @@ nodes:
             frame_id: $node.parent_frame
           pose: $node.pose
       node: WayPoint9
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint7_WayPoint5
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint5
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
@@ -528,8 +528,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: 4.24
-        y: -11.77
+        x: 4.15
+        y: -11.17
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -538,6 +538,21 @@ nodes:
     restrictions_runtime: obstacleFree_1
     verts: *vert1
     edges:
+    - edge_id: WayPoint8_WayPoint10
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint10
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
     - edge_id: WayPoint8_WayPoint34
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
@@ -568,21 +583,6 @@ nodes:
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
-    - edge_id: WayPoint8_WayPoint10
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint10
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
 - meta:
     map: riseholme
     node: WayPoint9
@@ -598,8 +598,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -1.54
-        y: 10.34
+        x: -1.63
+        y: 10.94
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -608,21 +608,6 @@ nodes:
     restrictions_runtime: obstacleFree_1
     verts: *vert1
     edges:
-    - edge_id: WayPoint9_WayPoint7
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint7
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
     - edge_id: WayPoint9_WayPoint35
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
@@ -653,6 +638,21 @@ nodes:
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint9_WayPoint7
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint7
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
     map: riseholme
     node: WayPoint10
@@ -668,8 +668,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: 1.78
-        y: -12.1
+        x: 1.7
+        y: -11.51
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -678,7 +678,7 @@ nodes:
     restrictions_runtime: obstacleFree_1
     verts: *vert1
     edges:
-    - edge_id: WayPoint10_WayPoint12
+    - edge_id: WayPoint10_WayPoint8
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
       config: []
@@ -689,7 +689,7 @@ nodes:
           header:
             frame_id: $node.parent_frame
           pose: $node.pose
-      node: WayPoint12
+      node: WayPoint8
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
@@ -708,7 +708,7 @@ nodes:
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
-    - edge_id: WayPoint10_WayPoint8
+    - edge_id: WayPoint10_WayPoint12
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
       config: []
@@ -719,7 +719,7 @@ nodes:
           header:
             frame_id: $node.parent_frame
           pose: $node.pose
-      node: WayPoint8
+      node: WayPoint12
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
@@ -738,8 +738,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -4.0
-        y: 10.01
+        x: -4.09
+        y: 10.61
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -748,21 +748,6 @@ nodes:
     restrictions_runtime: obstacleFree_1
     verts: *vert1
     edges:
-    - edge_id: WayPoint11_WayPoint9
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint9
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
     - edge_id: WayPoint11_WayPoint13
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
@@ -775,6 +760,21 @@ nodes:
             frame_id: $node.parent_frame
           pose: $node.pose
       node: WayPoint13
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint11_WayPoint9
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint9
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
@@ -808,8 +808,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -0.68
-        y: -12.55
+        x: -0.76
+        y: -11.95
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -818,21 +818,6 @@ nodes:
     restrictions_runtime: obstacleFree_1
     verts: *vert1
     edges:
-    - edge_id: WayPoint12_WayPoint10
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint10
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
     - edge_id: WayPoint12_WayPoint42
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
@@ -863,6 +848,21 @@ nodes:
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint12_WayPoint10
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint10
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
 - meta:
     map: riseholme
     node: WayPoint13
@@ -878,8 +878,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -6.46
-        y: 9.68
+        x: -6.54
+        y: 10.27
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -888,21 +888,6 @@ nodes:
     restrictions_runtime: obstacleFree_1
     verts: *vert1
     edges:
-    - edge_id: WayPoint13_WayPoint15
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint15
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
     - edge_id: WayPoint13_WayPoint11
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
@@ -915,6 +900,21 @@ nodes:
             frame_id: $node.parent_frame
           pose: $node.pose
       node: WayPoint11
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint13_WayPoint15
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint15
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
@@ -948,8 +948,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -3.13
-        y: -12.88
+        x: -3.22
+        y: -12.28
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -958,6 +958,21 @@ nodes:
     restrictions_runtime: obstacleFree_1
     verts: *vert1
     edges:
+    - edge_id: WayPoint14_WayPoint16
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint16
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
     - edge_id: WayPoint14_WayPoint12
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
@@ -988,21 +1003,6 @@ nodes:
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
-    - edge_id: WayPoint14_WayPoint16
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint16
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
 - meta:
     map: riseholme
     node: WayPoint15
@@ -1018,8 +1018,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -8.92
-        y: 9.34
+        x: -9.0
+        y: 9.94
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1028,6 +1028,21 @@ nodes:
     restrictions_runtime: obstacleFree_1
     verts: *vert1
     edges:
+    - edge_id: WayPoint15_WayPoint13
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint13
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
     - edge_id: WayPoint15_WayPoint17
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
@@ -1058,21 +1073,6 @@ nodes:
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
-    - edge_id: WayPoint15_WayPoint13
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint13
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
 - meta:
     map: riseholme
     node: WayPoint16
@@ -1088,8 +1088,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -5.59
-        y: -13.21
+        x: -5.68
+        y: -12.62
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1098,21 +1098,6 @@ nodes:
     restrictions_runtime: obstacleFree_1
     verts: *vert1
     edges:
-    - edge_id: WayPoint16_WayPoint18
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint18
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
     - edge_id: WayPoint16_WayPoint50
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
@@ -1125,6 +1110,21 @@ nodes:
             frame_id: $node.parent_frame
           pose: $node.pose
       node: WayPoint50
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint16_WayPoint18
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint18
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
@@ -1158,8 +1158,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -11.37
-        y: 8.9
+        x: -11.46
+        y: 9.49
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1168,7 +1168,7 @@ nodes:
     restrictions_runtime: obstacleFree_1
     verts: *vert1
     edges:
-    - edge_id: WayPoint17_WayPoint17
+    - edge_id: WayPoint17_WayPoint51
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
       config: []
@@ -1179,7 +1179,7 @@ nodes:
           header:
             frame_id: $node.parent_frame
           pose: $node.pose
-      node: WayPoint17
+      node: WayPoint51
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
@@ -1198,21 +1198,6 @@ nodes:
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
-    - edge_id: WayPoint17_WayPoint51
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint51
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
 - meta:
     map: riseholme
     node: WayPoint18
@@ -1228,8 +1213,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -8.12
-        y: -13.55
+        x: -8.21
+        y: -12.95
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1268,21 +1253,6 @@ nodes:
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
-    - edge_id: WayPoint18_WayPoint18
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint18
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
 - meta:
     map: riseholme
     node: WayPoint19
@@ -1298,8 +1268,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: 8.96
-        y: 7.79
+        x: 8.87
+        y: 8.38
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1338,21 +1308,6 @@ nodes:
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
-    - edge_id: WayPoint19_WayPoint19
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint19
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
 - meta:
     map: riseholme
     node: WayPoint20
@@ -1368,8 +1323,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: 9.63
-        y: 3.34
+        x: 9.54
+        y: 3.94
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1423,8 +1378,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: 10.29
-        y: -1.21
+        x: 10.2
+        y: -0.62
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1433,21 +1388,6 @@ nodes:
     restrictions_runtime: obstacleFree_1
     verts: *vert1
     edges:
-    - edge_id: WayPoint21_WayPoint20
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint20
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
     - edge_id: WayPoint21_WayPoint22
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
@@ -1460,6 +1400,21 @@ nodes:
             frame_id: $node.parent_frame
           pose: $node.pose
       node: WayPoint22
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint21_WayPoint20
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint20
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
@@ -1478,8 +1433,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: 10.95
-        y: -5.66
+        x: 10.87
+        y: -5.06
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1488,21 +1443,6 @@ nodes:
     restrictions_runtime: obstacleFree_1
     verts: *vert1
     edges:
-    - edge_id: WayPoint22_WayPoint21
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint21
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
     - edge_id: WayPoint22_WayPoint2
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
@@ -1515,6 +1455,21 @@ nodes:
             frame_id: $node.parent_frame
           pose: $node.pose
       node: WayPoint2
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint22_WayPoint21
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint21
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
@@ -1533,8 +1488,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: 6.44
-        y: 7.45
+        x: 6.35
+        y: 8.05
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1543,36 +1498,6 @@ nodes:
     restrictions_runtime: obstacleFree_1
     verts: *vert1
     edges:
-    - edge_id: WayPoint23_WayPoint24
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint24
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
-    - edge_id: WayPoint23_WayPoint23
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint23
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
     - edge_id: WayPoint23_WayPoint3
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
@@ -1585,6 +1510,21 @@ nodes:
             frame_id: $node.parent_frame
           pose: $node.pose
       node: WayPoint3
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint23_WayPoint24
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint24
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
@@ -1603,8 +1543,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: 7.1
-        y: 3.01
+        x: 7.01
+        y: 3.61
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1613,21 +1553,6 @@ nodes:
     restrictions_runtime: obstacleFree_1
     verts: *vert1
     edges:
-    - edge_id: WayPoint24_WayPoint23
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint23
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
     - edge_id: WayPoint24_WayPoint25
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
@@ -1640,6 +1565,21 @@ nodes:
             frame_id: $node.parent_frame
           pose: $node.pose
       node: WayPoint25
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint24_WayPoint23
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint23
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
@@ -1658,8 +1598,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: 7.76
-        y: -1.55
+        x: 7.68
+        y: -0.95
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1668,21 +1608,6 @@ nodes:
     restrictions_runtime: obstacleFree_1
     verts: *vert1
     edges:
-    - edge_id: WayPoint25_WayPoint24
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint24
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
     - edge_id: WayPoint25_WayPoint26
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
@@ -1695,6 +1620,21 @@ nodes:
             frame_id: $node.parent_frame
           pose: $node.pose
       node: WayPoint26
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint25_WayPoint24
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint24
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
@@ -1713,8 +1653,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: 8.43
-        y: -5.99
+        x: 8.34
+        y: -5.39
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1768,8 +1708,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: 3.98
-        y: 7.12
+        x: 3.89
+        y: 7.72
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1778,21 +1718,6 @@ nodes:
     restrictions_runtime: obstacleFree_1
     verts: *vert1
     edges:
-    - edge_id: WayPoint27_WayPoint5
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint5
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
     - edge_id: WayPoint27_WayPoint28
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
@@ -1808,7 +1733,7 @@ nodes:
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
-    - edge_id: WayPoint27_WayPoint27
+    - edge_id: WayPoint27_WayPoint5
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
       config: []
@@ -1819,7 +1744,7 @@ nodes:
           header:
             frame_id: $node.parent_frame
           pose: $node.pose
-      node: WayPoint27
+      node: WayPoint5
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
@@ -1838,8 +1763,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: 4.64
-        y: 2.68
+        x: 4.55
+        y: 3.27
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1848,21 +1773,6 @@ nodes:
     restrictions_runtime: obstacleFree_1
     verts: *vert1
     edges:
-    - edge_id: WayPoint28_WayPoint29
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint29
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
     - edge_id: WayPoint28_WayPoint27
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
@@ -1875,6 +1785,21 @@ nodes:
             frame_id: $node.parent_frame
           pose: $node.pose
       node: WayPoint27
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint28_WayPoint29
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint29
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
@@ -1893,8 +1818,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: 5.31
-        y: -1.88
+        x: 5.22
+        y: -1.28
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1948,8 +1873,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: 5.97
-        y: -6.32
+        x: 5.88
+        y: -5.73
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -1958,21 +1883,6 @@ nodes:
     restrictions_runtime: obstacleFree_1
     verts: *vert1
     edges:
-    - edge_id: WayPoint30_WayPoint6
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint6
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
     - edge_id: WayPoint30_WayPoint29
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
@@ -1985,6 +1895,21 @@ nodes:
             frame_id: $node.parent_frame
           pose: $node.pose
       node: WayPoint29
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint30_WayPoint6
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint6
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
@@ -2003,8 +1928,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: 1.52
-        y: 6.79
+        x: 1.43
+        y: 7.38
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -2025,21 +1950,6 @@ nodes:
             frame_id: $node.parent_frame
           pose: $node.pose
       node: WayPoint7
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
-    - edge_id: WayPoint31_WayPoint31
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint31
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
@@ -2073,8 +1983,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: 2.18
-        y: 2.23
+        x: 2.09
+        y: 2.83
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -2128,8 +2038,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: 2.85
-        y: -2.21
+        x: 2.76
+        y: -1.62
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -2183,8 +2093,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: 3.51
-        y: -6.66
+        x: 3.42
+        y: -6.06
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -2238,8 +2148,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -0.94
-        y: 6.34
+        x: -1.03
+        y: 6.94
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -2248,21 +2158,6 @@ nodes:
     restrictions_runtime: obstacleFree_1
     verts: *vert1
     edges:
-    - edge_id: WayPoint35_WayPoint35
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint35
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
     - edge_id: WayPoint35_WayPoint36
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
@@ -2308,8 +2203,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -0.28
-        y: 1.9
+        x: -0.36
+        y: 2.49
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -2363,8 +2258,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: 0.39
-        y: -2.55
+        x: 0.3
+        y: -1.95
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -2418,8 +2313,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: 1.05
-        y: -7.1
+        x: 0.96
+        y: -6.51
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -2473,8 +2368,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -3.4
-        y: 6.01
+        x: -3.49
+        y: 6.61
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -2513,21 +2408,6 @@ nodes:
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
-    - edge_id: WayPoint39_WayPoint39
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint39
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
 - meta:
     map: riseholme
     node: WayPoint40
@@ -2543,8 +2423,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -2.74
-        y: 1.56
+        x: -2.82
+        y: 2.16
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -2553,21 +2433,6 @@ nodes:
     restrictions_runtime: obstacleFree_1
     verts: *vert1
     edges:
-    - edge_id: WayPoint40_WayPoint41
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint41
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
     - edge_id: WayPoint40_WayPoint39
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
@@ -2580,6 +2445,21 @@ nodes:
             frame_id: $node.parent_frame
           pose: $node.pose
       node: WayPoint39
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint40_WayPoint41
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint41
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
@@ -2598,8 +2478,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -2.07
-        y: -2.99
+        x: -2.16
+        y: -2.39
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -2653,8 +2533,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -1.41
-        y: -7.44
+        x: -1.49
+        y: -6.84
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -2663,21 +2543,6 @@ nodes:
     restrictions_runtime: obstacleFree_1
     verts: *vert1
     edges:
-    - edge_id: WayPoint42_WayPoint41
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint41
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
     - edge_id: WayPoint42_WayPoint12
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
@@ -2690,6 +2555,21 @@ nodes:
             frame_id: $node.parent_frame
           pose: $node.pose
       node: WayPoint12
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint42_WayPoint41
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint41
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
@@ -2708,8 +2588,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -5.86
-        y: 5.68
+        x: -5.95
+        y: 6.27
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -2718,36 +2598,6 @@ nodes:
     restrictions_runtime: obstacleFree_1
     verts: *vert1
     edges:
-    - edge_id: WayPoint43_WayPoint44
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint44
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
-    - edge_id: WayPoint43_WayPoint43
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint43
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
     - edge_id: WayPoint43_WayPoint13
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
@@ -2760,6 +2610,21 @@ nodes:
             frame_id: $node.parent_frame
           pose: $node.pose
       node: WayPoint13
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint43_WayPoint44
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint44
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
@@ -2778,8 +2643,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -5.19
-        y: 1.23
+        x: -5.28
+        y: 1.83
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -2833,8 +2698,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -4.53
-        y: -3.32
+        x: -4.62
+        y: -2.73
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -2843,21 +2708,6 @@ nodes:
     restrictions_runtime: obstacleFree_1
     verts: *vert1
     edges:
-    - edge_id: WayPoint45_WayPoint44
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint44
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
     - edge_id: WayPoint45_WayPoint46
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
@@ -2870,6 +2720,21 @@ nodes:
             frame_id: $node.parent_frame
           pose: $node.pose
       node: WayPoint46
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint45_WayPoint44
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint44
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
@@ -2888,8 +2753,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -3.86
-        y: -7.77
+        x: -3.95
+        y: -7.17
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -2898,21 +2763,6 @@ nodes:
     restrictions_runtime: obstacleFree_1
     verts: *vert1
     edges:
-    - edge_id: WayPoint46_WayPoint14
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint14
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
     - edge_id: WayPoint46_WayPoint45
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
@@ -2925,6 +2775,21 @@ nodes:
             frame_id: $node.parent_frame
           pose: $node.pose
       node: WayPoint45
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint46_WayPoint14
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint14
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
@@ -2943,8 +2808,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -8.32
-        y: 5.34
+        x: -8.41
+        y: 5.94
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -2953,36 +2818,6 @@ nodes:
     restrictions_runtime: obstacleFree_1
     verts: *vert1
     edges:
-    - edge_id: WayPoint47_WayPoint15
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint15
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
-    - edge_id: WayPoint47_WayPoint47
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint47
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
     - edge_id: WayPoint47_WayPoint48
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
@@ -2995,6 +2830,21 @@ nodes:
             frame_id: $node.parent_frame
           pose: $node.pose
       node: WayPoint48
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint47_WayPoint15
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint15
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
@@ -3013,8 +2863,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -7.65
-        y: 0.9
+        x: -7.74
+        y: 1.49
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -3068,8 +2918,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -6.99
-        y: -3.66
+        x: -7.08
+        y: -3.06
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -3123,8 +2973,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -6.32
-        y: -8.1
+        x: -6.41
+        y: -7.51
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -3178,8 +3028,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -10.78
-        y: 5.01
+        x: -10.86
+        y: 5.61
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -3188,21 +3038,6 @@ nodes:
     restrictions_runtime: obstacleFree_1
     verts: *vert1
     edges:
-    - edge_id: WayPoint51_WayPoint17
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint17
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
     - edge_id: WayPoint51_WayPoint52
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
@@ -3218,7 +3053,7 @@ nodes:
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
-    - edge_id: WayPoint51_WayPoint51
+    - edge_id: WayPoint51_WayPoint17
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
       config: []
@@ -3229,7 +3064,7 @@ nodes:
           header:
             frame_id: $node.parent_frame
           pose: $node.pose
-      node: WayPoint51
+      node: WayPoint17
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
@@ -3248,8 +3083,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -10.11
-        y: 0.45
+        x: -10.2
+        y: 1.05
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -3258,21 +3093,6 @@ nodes:
     restrictions_runtime: obstacleFree_1
     verts: *vert1
     edges:
-    - edge_id: WayPoint52_WayPoint51
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint51
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
     - edge_id: WayPoint52_WayPoint53
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
@@ -3285,6 +3105,21 @@ nodes:
             frame_id: $node.parent_frame
           pose: $node.pose
       node: WayPoint53
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint52_WayPoint51
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint51
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
@@ -3303,8 +3138,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -9.51
-        y: -3.99
+        x: -9.6
+        y: -3.39
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -3313,21 +3148,6 @@ nodes:
     restrictions_runtime: obstacleFree_1
     verts: *vert1
     edges:
-    - edge_id: WayPoint53_WayPoint54
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint54
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
     - edge_id: WayPoint53_WayPoint52
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
@@ -3340,6 +3160,21 @@ nodes:
             frame_id: $node.parent_frame
           pose: $node.pose
       node: WayPoint52
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint53_WayPoint54
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint54
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
@@ -3358,8 +3193,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -8.85
-        y: -8.44
+        x: -8.94
+        y: -7.84
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -3368,21 +3203,6 @@ nodes:
     restrictions_runtime: obstacleFree_1
     verts: *vert1
     edges:
-    - edge_id: WayPoint54_WayPoint18
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint18
-      recovery_behaviours_config: ''
-      restrictions_planning: robot
-      restrictions_runtime: obstacleFree_1
     - edge_id: WayPoint54_WayPoint53
       action: move_base
       action_type: move_base_msgs/MoveBaseGoal
@@ -3395,6 +3215,21 @@ nodes:
             frame_id: $node.parent_frame
           pose: $node.pose
       node: WayPoint53
+      recovery_behaviours_config: ''
+      restrictions_planning: robot
+      restrictions_runtime: obstacleFree_1
+    - edge_id: WayPoint54_WayPoint18
+      action: move_base
+      action_type: move_base_msgs/MoveBaseGoal
+      config: []
+      fail_policy: fail
+      fluid_navigation: true
+      goal:
+        target_pose:
+          header:
+            frame_id: $node.parent_frame
+          pose: $node.pose
+      node: WayPoint18
       recovery_behaviours_config: ''
       restrictions_planning: robot
       restrictions_runtime: obstacleFree_1
