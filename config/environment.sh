@@ -96,6 +96,21 @@ if [ ! -f "$TMAP_FILE" ]; then export TMAP_FILE="" ; fi
 
 
 #================================================================
+# Filepath of the Points of Interest Map File
+#================================================================
+#% DESCRIPTION
+#%    Path to tmap2 file used to encode information on
+#%    locations of interest, to be extended with information
+#%    on actions to perform at said locations.
+#%
+#================================================================
+export POI_FILE="$CONFIG_DIR/world/poi.tmap2.yaml"
+if [ ! -f "$POI_FILE" ]; then export POI_FILE="$CONFIG_DIR/world/poi.tmap2.yaml" ; fi
+if [ ! -f "$POI_FILE" ]; then export POI_FILE="" ; fi
+
+
+
+#================================================================
 # Filepath of the Gazebo World XML File
 #================================================================
 #% DESCRIPTION
