@@ -69,9 +69,8 @@ if [ -f "$PROPERTIES_FILE" ]; then source $PROPERTIES_FILE ; fi
 # Filepath of the Datum File
 #================================================================
 #% DESCRIPTION
-#%    Path to datum file or path to the autogen file if the
-#%    supplied version does is not given or empty if the
-#%    autogen version does not exist.
+#%    Path to datum file used to define the tf connection
+#%    between gps and rtk readings, and the world frame.
 #%
 #================================================================
 export DATUM_FILE="$CONFIG_DIR/location/datum.yaml"
@@ -84,9 +83,8 @@ if [ ! -f "$DATUM_FILE" ]; then export DATUM_FILE="" ; fi
 # Filepath of the Topological Map File
 #================================================================
 #% DESCRIPTION
-#%    Path to topological map file or path to the autogen
-#%    version if the supplied version is not given or
-#%    empty if the autogen version does not exist.
+#%    Path to topological map file used to represent navigible
+#%    paths through the environment.
 #%
 #================================================================
 export TMAP_FILE="$CONFIG_DIR/topological/network.tmap2.yaml"
@@ -114,7 +112,7 @@ if [ ! -f "$POI_FILE" ]; then export POI_FILE="" ; fi
 # Filepath of the Fiducial SLAM Marker Map
 #================================================================
 #% DESCRIPTION
-#%    Path to map of fiducial markers used for localisation,
+#%    Path to map of Fiducial markers used for localisation,
 #%    encoding information on pose, rotation and links, i.e:
 #%    id x y z pan tilt roll variance numObservations links
 #%
@@ -122,6 +120,20 @@ if [ ! -f "$POI_FILE" ]; then export POI_FILE="" ; fi
 export FIDUCIAL_MAP_FILE="$CONFIG_DIR/world/fiducial_map.txt"
 if [ ! -f "$FIDUCIAL_MAP_FILE" ]; then export FIDUCIAL_MAP_FILE="$CONFIG_DIR/world/fiducial_map_autogen.txt" ; fi
 if [ ! -f "$FIDUCIAL_MAP_FILE" ]; then export FIDUCIAL_MAP_FILE="" ; fi
+
+
+
+#================================================================
+# Filepath of the OpenRMF World File
+#================================================================
+#% DESCRIPTION
+#%    Path to OpenRMF world file. Used for compatibility with
+#%    the OpenRMF multi-robot simulator.
+#%
+#================================================================
+export OPENRMF_WORLD_FILE="$CONFIG_DIR/world/openrmf.yaml"
+if [ ! -f "$OPENRMF_WORLD_FILE" ]; then export OPENRMF_WORLD_FILE="$CONFIG_DIR/world/openrmf.yaml" ; fi
+if [ ! -f "$OPENRMF_WORLD_FILE" ]; then export OPENRMF_WORLD_FILE="" ; fi
 
 
 
@@ -162,11 +174,27 @@ if [ "$non_hidden_file_count" -gt 1 ]; then export GAZEBO_MODEL_PATH="$GAZEBO_MO
 #================================================================
 #% DESCRIPTION
 #%    Path to costmap yaml configuration for use with
-#%    move_base or the autogen version if the supplied
-#%    version is not given or empty if the autogen version
-#%    does not exist.
+#%    move_base or nav2. For use with general navigation
+#%    and obstacle avoidance.
 #%
 #================================================================
 export COSTMAP_YAML_FILE="$CONFIG_DIR/metric/map/map.yaml"
 if [ ! -f "$COSTMAP_YAML_FILE" ]; then export COSTMAP_YAML_FILE="$CONFIG_DIR/metric/map/map_autogen.yaml" ; fi
 if [ ! -f "$COSTMAP_YAML_FILE" ]; then export COSTMAP_YAML_FILE="" ; fi
+
+
+
+#================================================================
+# Filepath of the NoGo Costmap YAML Configuration File
+#================================================================
+#% DESCRIPTION
+#%    Path to nogo costmap yaml configuration for use with
+#%    move_base and nav2. Used to explicitly express obstacles
+#%    beyond the visible range of the lidar.
+#%
+#================================================================
+export NOGO_COSTMAP_YAML_FILE="$CONFIG_DIR/metric/nogo/map.yaml"
+if [ ! -f "$NOGO_COSTMAP_YAML_FILE" ]; then export NOGO_COSTMAP_YAML_FILE="$CONFIG_DIR/metric/nogo/map_autogen.yaml" ; fi
+if [ ! -f "$NOGO_COSTMAP_YAML_FILE" ]; then export NOGO_COSTMAP_YAML_FILE="" ; fi
+
+
