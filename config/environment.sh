@@ -27,7 +27,7 @@
 #%    in which this environment was tested and configured.
 #%
 #================================================================
-export ENVIRONMENT_COMMON_LATEST_RELEASE='v1.0.1'
+export ENVIRONMENT_COMMON_LATEST_RELEASE='v1.0.0'
 
 
 
@@ -96,6 +96,36 @@ if [ ! -f "$TMAP_FILE" ]; then export TMAP_FILE="" ; fi
 
 
 #================================================================
+# Filepath of the Points of Interest Map File
+#================================================================
+#% DESCRIPTION
+#%    Path to tmap2 file used to encode information on
+#%    locations of interest, to be extended with information
+#%    on actions to perform at said locations.
+#%
+#================================================================
+export POI_FILE="$CONFIG_DIR/world/poi.tmap2.yaml"
+if [ ! -f "$POI_FILE" ]; then export POI_FILE="$CONFIG_DIR/world/poi_autogen.tmap2.yaml" ; fi
+if [ ! -f "$POI_FILE" ]; then export POI_FILE="" ; fi
+
+
+
+#================================================================
+# Filepath of the Fiducial SLAM Marker Map
+#================================================================
+#% DESCRIPTION
+#%    Path to map of fiducial markers used for localisation,
+#%    encoding information on pose, rotation and links, i.e:
+#%    id x y z pan tilt roll variance numObservations links
+#%
+#================================================================
+export FIDUCIAL_MAP_FILE="$CONFIG_DIR/world/fiducial_map.txt"
+if [ ! -f "$FIDUCIAL_MAP_FILE" ]; then export FIDUCIAL_MAP_FILE="$CONFIG_DIR/world/fiducial_map_autogen.txt" ; fi
+if [ ! -f "$FIDUCIAL_MAP_FILE" ]; then export FIDUCIAL_MAP_FILE="" ; fi
+
+
+
+#================================================================
 # Filepath of the Gazebo World XML File
 #================================================================
 #% DESCRIPTION
@@ -140,5 +170,3 @@ if [ "$non_hidden_file_count" -gt 1 ]; then export GAZEBO_MODEL_PATH="$GAZEBO_MO
 export COSTMAP_YAML_FILE="$CONFIG_DIR/metric/map/map.yaml"
 if [ ! -f "$COSTMAP_YAML_FILE" ]; then export COSTMAP_YAML_FILE="$CONFIG_DIR/metric/map/map_autogen.yaml" ; fi
 if [ ! -f "$COSTMAP_YAML_FILE" ]; then export COSTMAP_YAML_FILE="" ; fi
-
-
