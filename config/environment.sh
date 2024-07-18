@@ -70,7 +70,7 @@ if [ -f "$PROPERTIES_FILE" ]; then source $PROPERTIES_FILE ; fi
 #================================================================
 #% DESCRIPTION
 #%    Path to datum file used to define the tf connection
-#%    between gps and rtk readings, and the world frame.
+#%    between GNSS/RTK readings, and the world frame.
 #%
 #================================================================
 export DATUM_FILE="$CONFIG_DIR/location/datum.yaml"
@@ -94,17 +94,30 @@ if [ ! -f "$TMAP_FILE" ]; then export TMAP_FILE="" ; fi
 
 
 #================================================================
+# Filepath of the NavGraph Map File
+#================================================================
+#% DESCRIPTION
+#%    Path to NavGraph topological map, used to define paths
+#%    for robot to navigate.
+#%
+#================================================================
+export NAVGRAPH_FILE="$CONFIG_DIR/topological/navgraph.yaml"
+if [ ! -f "$NAVGRAPH_FILE" ]; then export NAVGRAPH_FILE="$CONFIG_DIR/topological/navgraph_autogen.yaml" ; fi
+if [ ! -f "$NAVGRAPH_FILE" ]; then export NAVGRAPH_FILE="" ; fi
+
+
+
+#================================================================
 # Filepath of the Points of Interest Map File
 #================================================================
 #% DESCRIPTION
-#%    Path to tmap2 file used to encode information on
-#%    locations of interest, to be extended with information
-#%    on actions to perform at said locations.
+#%    Path to OpenStreetMap XML file, used to define objects and
+#%    their connections using GNSS frame of reference.
 #%
 #================================================================
-export POI_FILE="$CONFIG_DIR/world/poi.tmap2.yaml"
-if [ ! -f "$POI_FILE" ]; then export POI_FILE="$CONFIG_DIR/world/poi_autogen.tmap2.yaml" ; fi
-if [ ! -f "$POI_FILE" ]; then export POI_FILE="" ; fi
+export OSM_FILE="$CONFIG_DIR/topological/osm.xml"
+if [ ! -f "$OSM_FILE" ]; then export OSM_FILE="$CONFIG_DIR/topological/osm_autogen.xml" ; fi
+if [ ! -f "$OSM_FILE" ]; then export OSM_FILE="" ; fi
 
 
 
@@ -124,6 +137,21 @@ if [ ! -f "$FIDUCIAL_MAP_FILE" ]; then export FIDUCIAL_MAP_FILE="" ; fi
 
 
 #================================================================
+# Filepath of the Points of Interest Map File
+#================================================================
+#% DESCRIPTION
+#%    Path to tmap2 file used to encode information on
+#%    locations of interest, to be extended with information
+#%    on actions to perform at said locations.
+#%
+#================================================================
+export POI_FILE="$CONFIG_DIR/world/poi.tmap2.yaml"
+if [ ! -f "$POI_FILE" ]; then export POI_FILE="$CONFIG_DIR/world/poi_autogen.tmap2.yaml" ; fi
+if [ ! -f "$POI_FILE" ]; then export POI_FILE="" ; fi
+
+
+
+#================================================================
 # Filepath of the OpenRMF World File
 #================================================================
 #% DESCRIPTION
@@ -132,7 +160,7 @@ if [ ! -f "$FIDUCIAL_MAP_FILE" ]; then export FIDUCIAL_MAP_FILE="" ; fi
 #%
 #================================================================
 export OPENRMF_WORLD_FILE="$CONFIG_DIR/world/openrmf.yaml"
-if [ ! -f "$OPENRMF_WORLD_FILE" ]; then export OPENRMF_WORLD_FILE="$CONFIG_DIR/world/openrmf.yaml" ; fi
+if [ ! -f "$OPENRMF_WORLD_FILE" ]; then export OPENRMF_WORLD_FILE="$CONFIG_DIR/world/openrmf_autogen.yaml" ; fi
 if [ ! -f "$OPENRMF_WORLD_FILE" ]; then export OPENRMF_WORLD_FILE="" ; fi
 
 
