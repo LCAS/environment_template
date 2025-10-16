@@ -108,6 +108,20 @@ if [ ! -f "$NAVGRAPH_FILE" ]; then export NAVGRAPH_FILE="" ; fi
 
 
 #================================================================
+# Filepath of the Probablistic Road Map File
+#================================================================
+#% DESCRIPTION
+#%    Path to Probablistic Road Map, used to define paths
+#%    for a robot to navigate.
+#%
+#================================================================
+export PRM_FILE="$CONFIG_DIR/topological/prm_graph.yaml"
+if [ ! -f "$PRM_FILE" ]; then export PRM_FILE="$CONFIG_DIR/topological/prm_graph.yaml" ; fi
+if [ ! -f "$PRM_FILE" ]; then export PRM_FILE="" ; fi
+
+
+
+#================================================================
 # Filepath of the Points of Interest Map File
 #================================================================
 #% DESCRIPTION
@@ -148,6 +162,20 @@ if [ ! -f "$FIDUCIAL_MAP_FILE" ]; then export FIDUCIAL_MAP_FILE="" ; fi
 export POI_FILE="$CONFIG_DIR/world/poi.tmap2.yaml"
 if [ ! -f "$POI_FILE" ]; then export POI_FILE="$CONFIG_DIR/world/poi_autogen.tmap2.yaml" ; fi
 if [ ! -f "$POI_FILE" ]; then export POI_FILE="" ; fi
+
+
+
+#================================================================
+# Filepath of the Points of Interest (SIMPLE) Map File
+#================================================================
+#% DESCRIPTION
+#%    Path to a simple yaml identifying points of interest
+#%    with simple points wrt the grid.
+#%
+#================================================================
+export POI_SIMPLE_FILE="$CONFIG_DIR/world/poi_simple.yaml"
+if [ ! -f "$POI_SIMPLE_FILE" ]; then export POI_SIMPLE_FILE="$CONFIG_DIR/world/poi_simple_autogen.yaml" ; fi
+if [ ! -f "$POI_SIMPLE_FILE" ]; then export POI_SIMPLE_FILE="" ; fi
 
 
 
