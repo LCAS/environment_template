@@ -1,0 +1,6 @@
+image: map_autogen.png
+resolution: 0.25000
+origin: [-402.1743121801437, -87.56802793326983, 0.000000]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
