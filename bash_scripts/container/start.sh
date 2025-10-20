@@ -4,8 +4,8 @@
 # ------------------------------------------------------------
 
 #1
-echo -e "\n\n\nRunnng apt update\n"
-sudo apt-get update
+#echo -e "\n\n\nRunnng apt update\n"
+#sudo apt-get update
 
 #2
 echo -e "\n\n\nSourcing /opt/ros/setup.bash\n"
@@ -17,12 +17,12 @@ echo -e "\n\n\nSet working directory to /home/ros/ros2_ws\n"
 
 #4
 echo -e "\n\n\nRunning ROSDep update and install\n\n"
-rosdep update
-rosdep install --from-paths src --ignore-src -r -y
+#rosdep update
+#rosdep install --from-paths src --ignore-src -r -y
 
 #5
 echo -e "\n\n\nHandle PyPi-only deps listed in setup.py\n\n"
-find src -name setup.py -execdir pip install -e . \;
+#find src -name setup.py -execdir pip install -e . \;
 
 
 #6

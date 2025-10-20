@@ -3,7 +3,7 @@ services:
     build:
       context: ..
       dockerfile: docker/Dockerfile
-    container_name: environment_template_autocomplete
+    container_name: et_ac
     hostname: environment_template_autocomplete
     tty: true
     stdin_open: true
