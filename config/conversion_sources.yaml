@@ -1,0 +1,60 @@
+conversion_sources:
+  location/fence_autogen.kml:
+    data_sources:
+    - hash: 48bbae463898e80ff8dd8f10f35a9326
+      path: location/datum.yaml
+    hash: 4db9375b68478fca3239749e527b052f
+  metric/map/map_autogen.png:
+    data_sources:
+    - hash: 48bbae463898e80ff8dd8f10f35a9326
+      path: location/datum.yaml
+    hash: 1acf71fe993c4e65ac49c16b66f11399
+  metric/map/map_autogen.yaml:
+    data_sources:
+    - hash: 48bbae463898e80ff8dd8f10f35a9326
+      path: location/datum.yaml
+    hash: 63dd7f95ec7a81a1bc5638c7de4d2cba
+  metric/map/metric_autogen.kml:
+    data_sources:
+    - hash: 48bbae463898e80ff8dd8f10f35a9326
+      path: location/datum.yaml
+    - hash: cb71e7fdde2bc4536d2468256278d5b4
+      path: metric/map/map.yaml
+    - hash: 63dd7f95ec7a81a1bc5638c7de4d2cba
+      path: metric/map/map_autogen.yaml
+    hash: ea970df964c5678e2fd296bd4a2b580b
+  topological/network_autogen.kml:
+    data_sources:
+    - hash: 48bbae463898e80ff8dd8f10f35a9326
+      path: location/datum.yaml
+    - hash: 0c06e883292c58db6d251e84832db70b
+      path: topological/network.tmap2.yaml
+    hash: eae3a7aecf233f15a308f96e72f69a24
+  topological/network_autogen.tmap2.yaml:
+    data_sources:
+    - hash: 48bbae463898e80ff8dd8f10f35a9326
+      path: location/datum.yaml
+    - hash: eae3a7aecf233f15a308f96e72f69a24
+      path: topological/network_autogen.kml
+    hash: dce3f7a1b3398bb1c3a02be539731108
+  topological/network_autogen_overlay.kml:
+    data_sources:
+    - hash: 48bbae463898e80ff8dd8f10f35a9326
+      path: location/datum.yaml
+    - hash: 0c06e883292c58db6d251e84832db70b
+      path: topological/network.tmap2.yaml
+    hash: edc418f16bb92286c28b692368215f9d
+  topological/prm_autogen.yaml:
+    data_sources:
+    - hash: cb71e7fdde2bc4536d2468256278d5b4
+      path: metric/map/map.yaml
+    - hash: 63dd7f95ec7a81a1bc5638c7de4d2cba
+      path: metric/map/map_autogen.yaml
+    hash: 2ff7103340a07da81fdf68b848503e95
+  topological/prm_overlay_autogen.png:
+    data_sources:
+    - hash: cb71e7fdde2bc4536d2468256278d5b4
+      path: metric/map/map.yaml
+    - hash: 63dd7f95ec7a81a1bc5638c7de4d2cba
+      path: metric/map/map_autogen.yaml
+    hash: 442b52518acabf6466ff8fe45c175d38
