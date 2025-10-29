@@ -24693,8 +24693,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -28.05
-        y: 54.54
+        x: -27.05
+        y: 56.54
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -24763,8 +24763,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -33.41
-        y: 56.77
+        x: -32.41
+        y: 57.77
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -24833,8 +24833,8 @@ nodes:
         y: 0.0
         z: -0.6133967717260812
       position:
-        x: -38.77
-        y: 58.99
+        x: -37.77
+        y: 59.99
         z: 0.0
     properties:
       xy_goal_tolerance: 0.3
@@ -25250,61 +25250,6 @@ nodes:
             frame_id: $node.parent_frame
           pose: $node.pose
       node: WayPoint396
-      recovery_behaviours_config: ''
-      restrictions_planning: "True"
-      restrictions_runtime: obstacleFree_1
-    - edge_id: WayPoint405_WayPoint406
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint406
-      recovery_behaviours_config: ''
-      restrictions_planning: "True"
-      restrictions_runtime: obstacleFree_1
-- meta:
-    map: bob
-    node: WayPoint406
-    pointset: bob
-  node:
-    localise_by_topic: ''
-    parent_frame: map
-    name: WayPoint406
-    pose:
-      orientation:
-        w: 0.7897749049165983
-        x: 0.0
-        y: 0.0
-        z: -0.6133967717260812
-      position:
-        x: -38.29
-        y: 51.77
-        z: 0.0
-    properties:
-      xy_goal_tolerance: 0.3
-      yaw_goal_tolerance: 0.1
-    restrictions_planning: "True"
-    restrictions_runtime: obstacleFree_1
-    verts: *vert1
-    edges:
-    - edge_id: WayPoint406_WayPoint405
-      action: move_base
-      action_type: move_base_msgs/MoveBaseGoal
-      config: []
-      fail_policy: fail
-      fluid_navigation: true
-      goal:
-        target_pose:
-          header:
-            frame_id: $node.parent_frame
-          pose: $node.pose
-      node: WayPoint405
       recovery_behaviours_config: ''
       restrictions_planning: "True"
       restrictions_runtime: obstacleFree_1
