@@ -91,7 +91,8 @@ ENV PIP_DEFAULT_TIMEOUT=$PIP_DEFAULT_TIMEOUT \
 RUN python3 -m pip install --no-cache-dir --upgrade \
     pip wheel \
     setuptools==58.2.0 \
-    packaging==24.2
+    packaging==24.2 \
+    graphviz
 
 # ──────────────────────────────
 # 7. Drop privileges
