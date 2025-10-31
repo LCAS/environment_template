@@ -50,5 +50,5 @@ echo "---"
 
 #10
 echo -e "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
-echo -e "\n\n\nLaunching TopFleets Connection Script\n\n"
+echo -e "\n\n\nLaunching Fill Gaps Script\n\n"
 ros2 run environment_common fill_gaps.py
