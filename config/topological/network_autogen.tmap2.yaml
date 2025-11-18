@@ -3129,7 +3129,7 @@ nodes:
           header:
             frame_id: $node.parent_frame
           pose: $node.pose
-      node: WayPoint54
+      node: WayPoint203
       recovery_behaviours_config: ''
       restrictions_planning: "True"
       restrictions_runtime: obstacleFree_1
