@@ -1,9 +1,14 @@
 #TOPOLOGY (Node Descriptors)
 special_nodes:
-#tunnel ends
   - {id: WayPoint350, descriptors: [tunnel_platoon_station]}
   - {id: WayPoint349, descriptors: [tunnel_platoon_station]}
   - {id: WayPoint348, descriptors: [tunnel_platoon_station]}
+
+  - {id: WayPoint351, descriptors: [tunnel_platoon_station]}
+  - {id: WayPoint352, descriptors: [tunnel_platoon_station]}
+
+  - {id: WayPoint353, descriptors: [tunnel_platoon_station]}
+  - {id: WayPoint354, descriptors: [tunnel_platoon_station]}
 
   - {id: WayPoint364, descriptors: [storage_dropoff]}
   - {id: WayPoint371, descriptors: [storage_dropoff]}
@@ -16,6 +21,7 @@ special_nodes:
   - {id: WayPoint355, descriptors: [deploy_platoon_station]}
   - {id: WayPoint356, descriptors: [deploy_platoon_station]}
   - {id: WayPoint357, descriptors: [deploy_platoon_station]}
+
 
 #tunnel ends
 #  - {id: WayPoint348, descriptors: [base_tp_node, base_dc_node, storage_wait_node, wait_node]}
