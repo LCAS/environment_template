@@ -10,6 +10,13 @@ special_nodes:
   - {id: WayPoint353, descriptors: [tunnel_station]}
   - {id: WayPoint354, descriptors: [tunnel_station]}
 
+  - {id: WayPoint355, descriptors: [tunnel_entry]}
+  - {id: WayPoint356, descriptors: [tunnel_entry]}
+  - {id: WayPoint357, descriptors: [tunnel_entry]}
+
+  - {id: WayPoint392, descriptors: [storage_entry]}
+  - {id: WayPoint389, descriptors: [storage_entry]}
+
   - {id: WayPoint364, descriptors: [storage_dropoff]}
   - {id: WayPoint371, descriptors: [storage_dropoff]}
   - {id: WayPoint379, descriptors: [storage_dropoff]}
@@ -17,10 +24,6 @@ special_nodes:
   - {id: WayPoint361, descriptors: [storage_station]}
   - {id: WayPoint362, descriptors: [storage_station]}
   - {id: WayPoint365, descriptors: [storage_station]}
-
-  - {id: WayPoint355, descriptors: [deploy_station]}
-  - {id: WayPoint356, descriptors: [deploy_station]}
-  - {id: WayPoint357, descriptors: [deploy_station]}
 
 
 #tunnel ends
